@@ -1,0 +1,571 @@
+body {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  font-family: 'Museo_Sans_Cyrl', serif;
+  font-size: 23px;
+  color: #fff;
+  background: url("img/img1.jpg") no-repeat;
+  background-size: cover;
+}
+
+input#menu__toggle {
+  display: none;
+}
+
+label {
+  display: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 82px 115px;
+  margin-bottom: 50px;
+}
+
+.header__logo {
+  margin-left: 82px;
+  padding-top: 5px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav__link {
+  margin-left: 40px;
+  color: #f8eee4;
+  text-decoration: none;
+}
+
+.nav__link:first-child {
+  margin-left: 0;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__inner {
+  max-width: 555px;
+  line-height: 1.3;
+  margin-left: 205px;
+  position: relative;
+}
+
+.main__title {
+  font-family: 'Pt_serif', serif;
+  font-size: 280px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  line-height: 1.3;
+  opacity: 0.4;
+  margin: 0;
+}
+
+.main__subtitle {
+  margin: 0;
+  font-family: 'Pt_serif', serif;
+  font-size: 98px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  position: absolute;
+  top: 41%;
+  left: 15%;
+}
+
+.main__text {
+  max-width: 578px;
+  line-height: 1.2;
+  margin: 8px 0 35px 23px;
+}
+
+.main__photo {
+  width: 46%;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding-top: 87px;
+  overflow: hidden;
+}
+
+.main__photo__link {
+  margin-left: 37px;
+}
+
+.main__photo__link:first-child {
+  margin: 4px;
+}
+
+.main__btn {
+  display: inline-block;
+  height: 62px;
+  padding-left: 88px;
+  padding-right: 88px;
+  border-radius: 48px;
+  background-color: #d4bea3;
+  text-decoration: none;
+  color: #fff;
+  line-height: 62px;
+  margin-left: 21px;
+ }
+
+@media (max-width: 1500px) {
+  .container {
+    max-width: 1500px;
+  }
+
+  .header__inner {
+    padding: 50px 94px 50px 117px;
+    margin: 0;
+  }
+
+  .main__inner {
+    max-width: 457px;
+    margin-left: 145px;
+  }
+
+  .main__title {
+    font-size: 240px;
+  }
+
+  .main__subtitle {
+    font-size: 80px;
+    top: 41%;
+    left: 14%;
+  }
+
+  .main__text {
+    max-width: 480px;
+    margin: 10px 0 24px 12px;
+  }
+
+  .main__photo {
+    padding-top: 63px;
+  }
+
+  .main__photo__link {
+    height: 300px;
+    margin-left: 24px;
+  }
+
+  .main__photo__link:first-child {
+    height: 320px;
+  }
+}
+
+@media (max-width: 1366px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 1366px;
+  }
+
+  .header__inner {
+    padding: 54px 83px 92px 117px;
+    margin: 0;
+  }
+
+  .header__logo {
+    margin-left: 26px;
+    padding-top: 11px;
+  }
+
+  .header__logo-img {
+    width: 100px;
+  }
+
+  .nav__link {
+    margin-left: 30px;
+  }
+
+  .main__inner {
+    max-width: 430px;
+    margin-left: 145px;
+  }
+
+  .main__title {
+    font-size: 200px;
+  }
+
+  .main__subtitle {
+    font-size: 68px;
+    top: 41%;
+    left: 14%;
+  }
+
+  .main__text {
+    max-width: 420px;
+    padding-top: 7px;
+    padding-left: 14px;
+    padding-bottom: 24px;
+    margin: 0;
+}
+  
+  .main__btn {
+    height: 44px;
+    padding-left: 64px;
+    padding-right: 64px;
+    line-height: 44px;
+    margin-left: 15px;
+  }
+
+  .main__photo {
+    padding-top: 63px;
+  }
+
+  .main__photo__link {
+    height: 270px;
+    margin-left: 24px;
+  }
+
+  .main__photo__link:first-child {
+    height: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .header__logo {
+      margin-left: 28px;
+      padding-top: 19px;
+  }
+
+  .header__inner {
+    padding: 0;
+    margin: 45px 0 94px 14px;
+  }
+
+  .nav {
+    padding-top: 19px;
+    padding-right: 41px;
+  }
+
+  .nav__link {
+    margin-left: 29px;
+  }
+
+  .main__inner {
+    margin-left: 41px;
+  }
+
+  .main__subtitle {
+    top: 42%;
+    left: 15%;
+  }
+  .main__text {
+      margin: 0;
+  }
+
+  .main__btn {
+      margin-left: 19px;
+  }
+
+  .main__photo {
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .main__photo__link:first-child {
+    margin: 0;
+    width: 44%;
+  }
+
+  .main__photo__link {
+    width: 40%;
+  }
+}
+
+@media (max-width: 910px) {
+  .nav {
+    padding-right: 10px;
+  }
+
+  .main__title {
+    font-size: 200px;
+  }
+
+  .main__subtitle {
+    font-size: 75px;
+  }
+
+  .main__text {
+    padding: 0;
+  }
+
+  .main__photo {
+    width: 39%;
+  }
+
+  .main__photo__link {
+    width: 47%;
+  }
+
+  .main__photo__link:first-child {
+    width: 60%;
+  }
+}
+
+@media (max-width: 760px) {
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    width: 25px;
+    height: 17px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: relative;
+    float: right;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition-duration: 0.25s;
+  }
+
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+
+  .menu__btn > span::after {
+    content: '';
+    top: 6px;
+  }
+
+  .nav {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 150px 0;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 1px 0 6px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.25s;
+    z-index: 1;
+  }
+
+  .nav__link:first-child {
+    margin-left: 22px;
+  }
+
+  .nav__link {
+    display: block;
+    padding-top: 56px;
+    margin-right: 23px;
+    color: #333;
+    font: 600 32px/36px 'MuseoModerno', serif;
+    text-align: center;
+    line-height: 0.1;
+    text-decoration: none;
+    transition-duration: 0.25s;
+  }
+
+  .nav__link:hover {
+    background-color: #000;
+  }
+
+  #menu__toggle {
+    opacity: 0;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+    background-color: #000;
+    top: -25px;
+    left: 9px;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+    background-color: #000;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    background-color: #000;
+  }
+
+  #menu__toggle:checked ~ .nav {
+    visibility: visible;
+    overflow: hidden;
+    left: 0;
+    text-transform: lowercase;
+  }
+
+  .container {
+    max-width: 760px;
+  }
+
+  .header__inner {
+    padding: 0;
+    margin: 20px 0 60px 30px;
+  }
+
+  .header__logo {
+    padding-top: 24px;
+  }
+
+  .main__inner {
+    margin: auto;
+    text-align: center;
+  }
+
+  .main__subtitle {
+    top: 160px;
+    left: 63px;
+  }
+
+  .main__text {
+    width: 80%;
+    font-size: 25px;
+    text-align: center;
+    margin: 40px;
+  }
+
+  .main__photo {
+    display: none;
+  }
+
+  .main__btn {
+    position: relative;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 490px) {
+  .main__title {
+    font-size: 213px;
+  }
+
+  .main__title {
+    font-size: 170px;
+
+  }
+
+  .main__subtitle {
+    font-size: 60px;
+    top: 140px;
+    left: 88px;
+  }
+
+  .main__text {
+    font-size: 20px;
+    width: 83%;
+  }
+
+  .menu__btn {
+    top: 56px;
+  }
+}
+
+@media (max-width: 375px) {
+  .menu__btn {
+    top: 57px;
+    left: 317px;
+  }
+
+  .container {
+    max-width: 375px;
+  }
+
+  .header__inner {
+    padding: 0;
+    margin: 20px 0 55px 31px;
+  }
+
+  .header__logo {
+    margin-left: 12px;
+    padding-top: 0;
+  }
+
+  .header__logo-img {
+    width: 100px;
+    margin-top: 23px;
+  }
+
+  .main__title {
+    letter-spacing: 11px;
+  }
+
+  .main__subtitle {
+    top: 34%;
+    left: 21%;
+    letter-spacing: 2px;
+  }
+
+  .main__text {
+    font-size: 19px;
+    width: 294px;
+
+  }
+
+  .main__btn {
+      padding-left: 65px;
+      padding-right: 65px;
+      right: 16px;
+  }
+}
+
+@media (max-width: 340px) {
+  .menu__btn {
+      top: 57px;
+      left: 290px;
+  }
+
+  .main__title {
+    font-size: 150px;
+  }
+
+  .main__subtitle {
+    font-size: 50px;
+    top: 29%;
+  }
+
+  .main__text {
+    width: 250px;
+  }
+
+}
